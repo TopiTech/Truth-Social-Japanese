@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Truth Social 日本語化 + 手動翻訳",
+  "description": "UIは辞書のみで日本語化し、投稿はボタン押下時に翻訳します。",
+  "version": "0.6.2",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://truthsocial.com/*",
+    "https://*.truthsocial.com/*",
+    "https://api.cognitive.microsofttranslator.com/*",
+    "https://*.cognitiveservices.azure.com/*",
+    "https://api-free.deepl.com/*",
+    "https://api.deepl.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://truthsocial.com/*",
+        "https://*.truthsocial.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Truth Social 日本語化",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}

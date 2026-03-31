@@ -1,0 +1,16 @@
+{
+  "version": "0.6.2",
+  "zip": "/mnt/data/truthsocial-ja-extension-manual-bilingual-v062.zip",
+  "fixes": [
+    "プロフィール自己紹介の翻訳ボタン機能を完全削除",
+    "投稿ボタン判定ロジックを再レビューし、日本語投稿・動画主体投稿での誤表示をさらに抑制",
+    "UI辞書翻訳は短文・ラベル中心の置換ロジックを維持し、翻訳範囲を回復",
+    "MutationObserver 起因の重複ボタンを出しにくくするよう既存ボタンの除去ロジックを追加"
+  ],
+  "checks": {
+    "bio_feature_removed": true,
+    "has_partial_dict_translate": true,
+    "has_remove_existing_button": true,
+    "has_bottom_button": true
+  }
+}
