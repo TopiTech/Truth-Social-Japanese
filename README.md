@@ -2,7 +2,8 @@
 
 Truth Social のUIラベルをローカル辞書で日本語化し、投稿本文・コメント本文はDeepl APIかMicrosoft Translate APIを用いて翻訳する Manifest V3 対応の Chrome 拡張機能です。
 
-##使い方
+##　使い方
+
 このリポジトリをzipで丸ごとダウンロードして、Chromeのchrome://extensions/にてパッケージ化されていない拡張機能を読み込みで展開したフォルダを指定してください。
 APIキーは自身で取得し、この拡張機能の設定画面で入力してください。
 
